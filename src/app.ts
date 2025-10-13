@@ -1,5 +1,5 @@
 import express, { Application } from "express";
-import helloRoute from "./routes/hello.js";
+import helloRoute from "./routes/hello";
 
 const app: Application = express();
 const PORT = process.env.PORT || 3000;

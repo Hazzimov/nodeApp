@@ -1,7 +1,6 @@
 {
   "name": "nodeapp",
   "version": "1.0.0",
-  "version": "1.0.0",
   "main": "dist/app.js",
   "type": "module",
   "scripts": {
@@ -13,8 +12,18 @@
     "lint:fix": "eslint . --ext .ts --fix"
   },
   "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node"
+    "preset": "ts-jest/presets/default-esm",
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "roots": [
+      "<rootDir>/src/tests"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    }
   },
   "author": "",
   "license": "ISC",
