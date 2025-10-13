@@ -1,0 +1,41 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "ts-node src/app.ts",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.46.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.7.2",
+    "@types/supertest": "^6.0.3",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "jest": "^30.2.0",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
